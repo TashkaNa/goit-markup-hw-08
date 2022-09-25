@@ -1,0 +1,40 @@
+:root {
+  --main-color: #212121;
+  --primary-text-color: #757575;
+  --lightblue-color: #2196F3;
+  --lightblue-hover: #188CE8;
+  --primary-white-color: #FFFFFF;
+  --black-color: #000000;
+  --background-filters: #F5F4FA;
+  --darkgrey-color: #2F303A;
+  --header-border: #ECECEC;
+  --team-background: #F5F4FA;
+  --project-border: #EEEEEE;
+
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  margin: 0;
+  padding: 0;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.list{
+  list-style: none;
+}
+
+.logo {
+  width: 145px;
+  height: 31px;
+  margin-top: 23px;
+  margin-right: 40px;
+}
+
