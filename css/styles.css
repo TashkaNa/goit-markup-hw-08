@@ -10,6 +10,10 @@
   --header-border: #ECECEC;
   --team-background: #F5F4FA;
   --project-border: #EEEEEE;
+  --primary-font-family: 'Roboto',
+    sans-serif;
+  --secondary-font-family: 'Raleway',
+    sans-serif;
 
 }
 
@@ -37,4 +41,19 @@ body {
   margin-top: 23px;
   margin-right: 40px;
 }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+
 
