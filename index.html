@@ -17,10 +17,10 @@
     <header class="header">
       <nav>
         <a class="logo link" href="./index.html" lang="en"
-          >Web<span>Studio</span></a
+          >Web<span class="logo-dark">Studio</span></a
         >
         <ul class="navigation list">
-          <li><a class="link" href="./index.html">Студія</a></li>
+          <li><a class="link current-page" href="./index.html">Студія</a></li>
           <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
           <li><a class="link" href="#">Контакти</a></li>
         </ul>
@@ -40,41 +40,38 @@
     </header>
     <main>
       <section class="hero">
-        <!-- h1 use in Upper Case-->
-        <h1>Ефективні рішення для вашого бизнесу</h1>
-        <button type="button">Замовити послугу</button>
+        <h1 class="hero-title">Ефективні рішення для вашого бизнесу</h1>
+        <button class="btn" type="button">Замовити послугу</button>
       </section>
       <section>
-        <!-- h2 use visually-hidden pattern-->
-        <h2>Особливості</h2>
+        <h2 class="visually-hidden">Особливості</h2>
         <ul class="features list">
           <li class="feature-item">
-            <!-- h3 in Upper Case-->
-            <h3>Увага до деталей</h3>
-            <p>
+            <h3 class="feature-item-title">Увага до деталей</h3>
+            <p class="feature-item-text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
           <li class="feature-item">
             <!-- h3 use in Upper Case-->
-            <h3>Пунктуальність</h3>
-            <p>
+            <h3 class="feature-item-title">Пунктуальність</h3>
+            <p class="feature-item-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
           <li class="feature-item">
             <!-- h3 in Upper Case-->
-            <h3>Планування</h3>
-            <p>
+            <h3 class="feature-item-title">Планування</h3>
+            <p class="feature-item-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li class="feature-item">
             <!-- h3 use in Upper Case-->
-            <h3>Сучасні технології</h3>
-            <p>
+            <h3 class="feature-item-title">Сучасні технології</h3>
+            <p class="feature-item-text">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -151,12 +148,13 @@
     </main>
     <footer>
       <a class="logo link" href="./index.html" lang="en"
-        >Web<span>Studio</span></a
+        >Web<span class="logo-light">Studio</span></a
       >
       <address>
         <ul class="contacts-list list">
           <li class="contacts-link">
             <a
+              class="link"
               href="https://goo.gl/maps/zViUr5ABomGoPzUZA"
               target="_blank"
               rel="noopener noreferrer"
@@ -165,12 +163,12 @@
             </a>
           </li>
           <li>
-            <a class="contacts-link" href="mailto:info@devstudio.com"
+            <a class="contacts-link link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="contacts-link" href="tel:+380961111111"
+            <a class="contacts-link link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
