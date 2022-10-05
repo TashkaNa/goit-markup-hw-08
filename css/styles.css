@@ -19,7 +19,26 @@ body {
   color: var(--main-color);
   background-color: var(--primary-white-color);
 }
-
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+.section {
+  width: 100%;
+  padding: 94px 0;
+}
+section:nth-child(3) {
+  padding-top: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .list {
   list-style: none;
 }
@@ -27,6 +46,12 @@ body {
 .link,
 .link-current {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .navigation .link,
@@ -56,8 +81,26 @@ body {
   color: var(--accent-color);
 }
 
+.header .container,
+.nav,
+.navigation,
+.contacts-list,
+.filters {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   border-bottom: 1px solid var(--header-border);
+}
+
+.logo.link {
+  display: inline-block;
+}
+
+.header .logo.link {
+  padding: 24px 0;
+  margin-right: 93px;
 }
 
 .logo {
@@ -71,14 +114,33 @@ body {
 .logo-dark {
   color: var(--black-color);
 }
+.navigation {
+  margin-right: 344px;
+}
+
+.navigation-item > .link,
+.link-current,
+.contacts-item > .link {
+  padding: 32px 0;
+}
+
+.navigation-item:not(:last-child),
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: flex-start;
+}
 
 .logo-light,
 .hero-title,
 .btn,
 .btn:hover,
 .btn:focus,
-.filter-item:hover,
-.filter-item:focus,
+.filter-item-button:hover,
+.filter-item-button:focus,
 .address .address-item {
   color: var(--primary-white-color);
 }
@@ -99,6 +161,11 @@ body {
 .hero {
   background: var(--darkgrey-bg-color);
 }
+.hero,
+.activity-title,
+.team {
+  text-align: center;
+}
 
 .hero-title {
   font-weight: 900;
@@ -106,6 +173,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -115,6 +183,7 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
   background: var(--accent-color);
   border: 1px solid var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -146,27 +215,45 @@ body {
   letter-spacing: 0.03em;
 }
 
+.activity,
+.team-list {
+  display: inline-flex;
+}
+
 .activity-title,
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.activity-image-item:not(:last-child),
+.team-item {
+  margin-right: 30px;
 }
 .team {
   background-color: var(--team-bg-color);
 }
+
 .team-item {
+  max-width: 270px;
   background: var(--primary-white-color);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 2px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-item-card {
+  padding: 30px 0;
+}
+
 .team-item-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -175,7 +262,12 @@ body {
   letter-spacing: 0.03em;
 }
 
-.filter-item {
+.filters {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item-button {
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
@@ -187,21 +279,24 @@ body {
   border: var(--filters-bg-color);
   color: inherit;
   border-radius: 4px;
+  padding: 6px 25px;
 }
 
 .current-filter,
-.filter-item:hover,
-.filter-item:focus {
+.filter-item-button:hover,
+.filter-item-button:focus {
   color: var(--primary-white-color);
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 .project-item {
-  box-sizing: border-box;
   background: var(--primary-white-color);
-  border: 1px solid var(--project-border);
+  border-bottom: 1px solid var(--project-border);
 }
 
 .project-title {
@@ -220,12 +315,20 @@ body {
 
 .footer {
   background: var(--darkgrey-bg-color);
+  padding: 60px 0;
 }
 
+.footer .logo.link {
+  margin-bottom: 20px;
+}
 .address .link {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.address-contacts-link:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-contacts-link {
