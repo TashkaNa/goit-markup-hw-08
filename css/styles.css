@@ -27,13 +27,16 @@ p {
   margin: 0;
   padding: 0;
 }
+
 .section {
   width: 100%;
   padding: 94px 0;
 }
+
 section:nth-child(3) {
   padding-top: 0;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -73,8 +76,6 @@ img {
 .link:focus,
 .header .contacts-link:hover,
 .header .contacts-link:focus,
-.footer .address-item:hover,
-.footer .address-item:focus,
 .footer .contacts-link:hover,
 .footer .contacts-link:focus,
 .link-current {
@@ -114,13 +115,11 @@ img {
 .logo-dark {
   color: var(--black-color);
 }
-.navigation {
-  margin-right: 344px;
-}
 
-.navigation-item > .link,
+.navigation-item .link,
 .link-current,
-.contacts-item > .link {
+.contacts-item .link {
+  display: block;
   padding: 32px 0;
 }
 
@@ -131,7 +130,7 @@ img {
 
 .contacts-list {
   display: flex;
-  justify-content: flex-start;
+  margin-left: auto;
 }
 
 .logo-light,
@@ -141,7 +140,9 @@ img {
 .btn:focus,
 .filter-item-button:hover,
 .filter-item-button:focus,
-.address .address-item {
+.address .address-item,
+.address .address-item:hover,
+.address .address-item:focus {
   color: var(--primary-white-color);
 }
 
@@ -168,12 +169,13 @@ img {
 }
 
 .hero-title {
+  margin: 0 auto 30px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
 }
 
 .btn {
@@ -195,6 +197,19 @@ img {
   background: var(--hero-hover);
 }
 
+.features.list {
+  display: flex;
+  display: wrap;
+}
+
+.feature-item {
+  width: 270px;
+}
+
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .feature-item-text,
 .team-text,
 .project-text,
@@ -208,6 +223,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .feature-item-text {
@@ -294,9 +310,31 @@ img {
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .project-item {
   background: var(--primary-white-color);
-  border-bottom: 1px solid var(--project-border);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.project-item:nth-last-child(-n + 3) {
+  margin-bottom: 30px;
+}
+
+.project-item-card {
+  width: 370px;
+  padding: 20px 24px;
+  border: 1px solid var(--project-border);
+  border-top: none;
 }
 
 .project-title {
@@ -305,6 +343,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+  margin-bottom: 4px;
 }
 
 .project-text {
