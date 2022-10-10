@@ -29,12 +29,7 @@ p {
 }
 
 .section {
-  width: 100%;
   padding: 94px 0;
-}
-
-section:nth-child(3) {
-  padding-top: 0;
 }
 
 .container {
@@ -161,6 +156,7 @@ img {
 
 .hero {
   background: var(--darkgrey-bg-color);
+  padding: 200px 0;
 }
 .hero,
 .activity-title,
@@ -231,6 +227,9 @@ img {
   letter-spacing: 0.03em;
 }
 
+.activities {
+  padding-top: 0;
+}
 .activity,
 .team-list {
   display: inline-flex;
@@ -246,9 +245,10 @@ img {
 }
 
 .activity-image-item:not(:last-child),
-.team-item {
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .team {
   background-color: var(--team-bg-color);
 }
@@ -260,6 +260,7 @@ img {
     0 1px 2px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .team-item-card {
   padding: 30px 0;
 }
@@ -331,7 +332,6 @@ img {
 }
 
 .project-item-card {
-  width: 370px;
   padding: 20px 24px;
   border: 1px solid var(--project-border);
   border-top: none;
