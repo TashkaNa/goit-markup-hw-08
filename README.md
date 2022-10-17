@@ -1,8 +1,8 @@
-# goit-markup-hw-04
+# goit-markup-hw-05
 
-Module 4. Декоративні ефекти та елементи. Векторна графіка.
+Module 5. Позиціоновані елементи. Анімація і переходи.
 
-Посилання на сторінку: https://tashkana.github.io/goit-markup-hw-04/
+Посилання на сторінку: https://tashkana.github.io/goit-markup-hw-05/
 
 Посилання на макет:
-https://www.figma.com/file/PFVOE0l8evZPWdKBAuvdC6/Web-Studio-(Version-2.1)-(Copy)?node-id=1%3A493
+https://www.figma.com/file/1ehrLBauvVFu4mVhxsHzyZ/Web-Studio-(Version-2.1)?node-id=1%3A2125
