@@ -657,7 +657,7 @@ a.contacts-link.link {
 }
 .icon-close,
 .close-btn {
-  transition: fill 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn:hover {
   cursor: pointer;
