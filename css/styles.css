@@ -228,7 +228,7 @@ a.contacts-link.link {
   line-height: 1.9;
   letter-spacing: 0.06em;
   background: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -650,7 +650,6 @@ a.contacts-link.link {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
-  height: 581px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -659,7 +658,9 @@ a.contacts-link.link {
 }
 .modal-wrap {
   width: 100%;
+  height: 100%;
   padding: 40px;
+  text-align: center;
 }
 @keyframes closing {
   0% {
@@ -714,4 +715,98 @@ a.contacts-link.link {
 }
 .close-btn:hover {
   cursor: pointer;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 12px;
+}
+.modal-input {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
+}
+
+input[name='user-data'],
+textarea {
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input[name='user-data'] {
+  padding: 12px 42px;
+}
+textarea {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  margin-bottom: 20px;
+}
+.modal-icon {
+  position: absolute;
+  fill: var(--main-color);
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea:focus,
+input[name='user-data']:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+  fill: var(--accent-color);
+}
+input[name='user-data']:focus ~ .modal-icon {
+  fill: var(--accent-color);
+}
+.checkbox-text {
+  display: block;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.terms {
+  text-decoration: none;
+  color: var(--accent-color);
+  border-bottom: 1px solid;
+}
+.accept {
+  fill: var(--primary-white-color);
+  background-color: var(--primary-white-color);
+  border: 2px solid var(--main-color);
+  border-radius: 2px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input[type='checkbox']:checked ~ .accept {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.submit {
+  margin-bottom: 0;
+  padding: 10px 50px;
 }

@@ -647,51 +647,54 @@
           </svg>
         </button>
         <div class="modal-wrap">
-              <h2>Залиште свої дані, ми вам передзвонимо</h2>
-      <form name="data_form" action="" class="form">
-        <div>
-          <label for="username">Ім'я
-          <input id="username" type="text" name="username" autofocus />
-           <svg class="modal-icon" width="18" height="18">
-            <use href="./images/icons-sprite.svg#icon-person"></use>
-          </svg>
-          </label>
-        </div>
-        <div>
-          <label for="usertel">Телефон</label>
-          <input id="usertel" type="tel" name="usertel" />
-         <svg class="modal-icon" width="18" height="18">
-          <use href="./images/icons-sprite.svg#icon-phone"></use>
-         </svg>
-        </div>
-        <div>
-          <label for="usermail">Пошта</label>
-          <input id="usermail" type="email" name="useremail" />
-          <svg class="modal-icon" width="18" height="18">
-            <use href="./images/icons-sprite.svg#icon-email"></use>
-          </svg>
-        </div>
-        <div>
-          <label for="user-comment">Коментар</label>
-          <textarea
-            id="user-comment"
-            type="texrarea"
-            name="user-comment"
-            placeholder="Введіть текст"
-          ></textarea>
-          <svg class="modal-icon" width="16" height="15">
-            <use href="./images/icons-sprite.svg#icon-check"></use>
-          </svg>
-        </div>
-        <div>
-          <input type="checkbox" name="accept" id="accept" />
-          <p>
-            Погоджуюся з розсилкою та приймаю <a><span>Умови договору</span></a>
-          </p>
-        </div>
-        <button class="btn" type="submit">Відправити</button>
-        </div>
-      </form>
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <form name="data-form" action="#" class="form">
+            
+              <label class="modal-label" for="username">Ім'я</label>
+              <div class="modal-input">
+                <input id="username" type="text" name="user-data" autofocus />
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons-sprite.svg#icon-person"></use>
+                </svg>
+              
+              </div>
+              <label class="modal-label" for="usertel">Телефон</label>
+              <div class="modal-input">
+                <input id="usertel" type="tel" name="user-data" />
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons-sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
+            
+              <label class="modal-label" for="useremail">Пошта</label>
+              <div class="modal-input">
+                <input id="useremail" type="email" name="user-data" />
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons-sprite.svg#icon-email"></use>
+                </svg>
+              </div>
+            
+              <label class="modal-label" for="user-comment">Коментар</label>
+                <textarea
+                id="user-comment"
+                type="texrarea"
+                name="user-data"
+                placeholder="Введіть текст" autocomplete="off"
+              ></textarea>
+              
+              <div class="modal-input">
+              <label class="checkbox-text" >
+                Погоджуюся з розсилкою та приймаю <a class="terms" href="#"> <span>Умови договору </span></a>
+              <input class="visually-hidden" type="checkbox" name="accept"  />
+            <svg class="modal-icon accept" width="16" height="15">
+                <use href="./images/icons-sprite.svg#icon-check"></use>
+              </svg>
+            </label>
+           </div>
+          
+            <button class="btn submit" type="submit">Відправити</button>
+            
+          </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
