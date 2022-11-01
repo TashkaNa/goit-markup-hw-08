@@ -570,7 +570,7 @@
           </address>
         </div>
         <div class="cta-socials">
-          <h3 class="socials-title">приєднуйтесь</h3>
+          <p class="socials-title">приєднуйтесь</p>
           <ul class="social-links list">
             <li class="social-links-item">
               <a
@@ -624,9 +624,9 @@
         </div>
         <div class="container-input">
           <div class="subscribe-input-wrap">
-          <h3 class="subscribe-title">підпишиться на розсилку</h3>
+          <p class="subscribe-title">підпишиться на розсилку</p>
           <form class="subscribe-form" action="#">
-            <label>
+            <label class="subscribe-email-label">
               <input class="subscribe-input" type="email" name="subscribe-input" placeholder="E-mail"/>
             </label>
             <button class="subscribe-btn" type="submit">Підписатися
@@ -647,7 +647,7 @@
           </svg>
         </button>
         <div class="modal-wrap">
-          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
           <form name="data-form" action="#" class="form">
             
               <label class="modal-label" for="username">Ім'я</label>
@@ -656,8 +656,8 @@
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/icons-sprite.svg#icon-person"></use>
                 </svg>
-              
               </div>
+
               <label class="modal-label" for="usertel">Телефон</label>
               <div class="modal-input">
                 <input id="usertel" type="tel" name="user-data" />
@@ -681,19 +681,14 @@
                 name="user-data"
                 placeholder="Введіть текст" autocomplete="off"
               ></textarea>
-              
-              <div class="modal-input">
               <label class="checkbox-text" >
-                Погоджуюся з розсилкою та приймаю <a class="terms" href="#"> <span>Умови договору </span></a>
-              <input class="visually-hidden" type="checkbox" name="accept"  />
-            <svg class="modal-icon accept" width="16" height="15">
-                <use href="./images/icons-sprite.svg#icon-check"></use>
-              </svg>
-            </label>
-           </div>
-          
-            <button class="btn submit" type="submit">Відправити</button>
-            
+                <input class="visually-hidden" type="checkbox" name="accept"  />
+                <svg class="accept" width="16" height="15">
+                  <use href="./images/icons-sprite.svg#icon-check"></use>
+                </svg>
+             Погоджуюся з розсилкою та приймаю <a class="terms" href="#"> Умови договору </a>
+              </label>
+              <button class="btn submit" type="submit">Відправити</button>
           </form>
       </div>
     </div>
