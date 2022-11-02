@@ -1,8 +1,7 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-Module 6. Розмітка форм. Стилізація форм.
+Module 7. CSS методології. BEM мeтодологія. Препроцесор SASS.
 
-Посилання на сторінку: https://tashkana.github.io/goit-markup-hw-06/
+Посилання на сторінку: https://tashkana.github.io/goit-markup-hw-07/
 
-Посилання на макет:
-https://www.figma.com/file/1ehrLBauvVFu4mVhxsHzyZ/Web-Studio-(Version-2.1)?node-id=1%3A2125
+
