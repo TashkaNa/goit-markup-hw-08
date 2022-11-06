@@ -1,5 +1,26 @@
+%btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  background-color: $color-accent;
+  color: $color-primary-white;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color $transition,
+    color $transition,
+    box-shadow $transition;
+}
 %title {
   color: $color-main;
   text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   margin-bottom: 50px;
+
 }
