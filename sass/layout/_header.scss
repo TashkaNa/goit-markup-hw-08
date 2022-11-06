@@ -1,0 +1,15 @@
+.header{
+    border-bottom: 1px solid $color-header-border;
+    &__nav {
+    display: flex;
+    align-items: center;
+    }
+    &__contacts{
+    margin-left: auto;
+    }
+  }
+  .header .container{
+    display: flex;
+    align-items: center;
+  }
+

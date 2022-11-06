@@ -29,6 +29,7 @@ body {
   color: var(--main-color);
   background-color: var(--primary-white-color);
 }
+
 h1,
 h2,
 h3,
@@ -47,6 +48,7 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .list {
   list-style: none;
 }
@@ -55,13 +57,16 @@ p {
 .link-current {
   text-decoration: none;
 }
+
 .link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .link-current {
   position: relative;
 }
+
 .link-current::after {
   display: inline-block;
   position: absolute;
@@ -150,10 +155,12 @@ img {
 .contacts-list {
   gap: 50px;
 }
+
 .contacts-list {
   display: flex;
   margin-left: auto;
 }
+
 a.contacts-link.link {
   display: flex;
   align-items: center;
@@ -235,9 +242,11 @@ a.contacts-link.link {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .btn {
   padding: 10px 32px;
 }
+
 .btn:hover,
 .btn:focus,
 .subscribe-btn:hover,
