@@ -256,7 +256,7 @@ a.contacts-link.link {
 
 .features.list {
   display: flex;
-  display: wrap;
+  flex: wrap;
 }
 
 .features.list,
@@ -410,7 +410,6 @@ a.contacts-link.link {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
-  border-radius: 50%;
 }
 
 .team-social-link:hover .icon,
