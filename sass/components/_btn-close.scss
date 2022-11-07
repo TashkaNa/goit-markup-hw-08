@@ -1,0 +1,24 @@
+.btn__close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  font-size: 11px;
+  color: $color-black;
+  background-color: $color-primary-white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill $transition;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $color-accent;
+    outline: none;
+    border-color: $color-accent;
+  }
+}
