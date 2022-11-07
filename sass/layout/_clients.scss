@@ -1,0 +1,32 @@
+.clients{
+  &__title{
+  @extend %title;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  &__item{
+    width: 170px;
+    height: 92px;
+  }
+  &__link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-inactive-icon;
+    border-radius: 4px;
+    fill: $color-inactive-icon;
+    transition: border-color $transition, fill $transition;
+    
+    &:hover,
+    &:focus {
+    border-color: $color-accent;
+    fill: $color-accent;
+    }
+  }
+}

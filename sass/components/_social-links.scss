@@ -16,17 +16,13 @@
   height: 100%;
   border-radius: 50%;
   background-color: $color-white10;
-  fill: $color-social-icons;
-  transition: background-color $transition,
-    fill $transition;
+  fill: $color-inactive-icon;
+  transition: background-color $transition, fill $transition;
     
   &:hover, 
-  &:focus{
+  &:focus {
   background-color: $color-accent;
-    &:hover .icon,
-    &:focus .icon{
-    fill: $color-primary-white;
-    }
+  fill: $color-primary-white;
   }
  }
 }

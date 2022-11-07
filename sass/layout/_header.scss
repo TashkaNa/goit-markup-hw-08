@@ -7,9 +7,12 @@
     &__contacts{
     margin-left: auto;
     }
-  }
-  .header .container{
+    & .container{
     display: flex;
     align-items: center;
+    }
+    & .logo{
+    padding: 24px 0;
+    margin-right: 93px;
+    }
   }
-

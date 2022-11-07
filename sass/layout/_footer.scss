@@ -1,0 +1,17 @@
+.footer{
+  background: $color-darkgrey-bg;
+  padding: 60px 0;
+
+  &__container{
+    display: flex;
+    align-items: baseline;
+  }
+  &__address{
+    flex-grow: 1;
+    margin-right: 70px;
+  }
+  & .logo{
+    margin-bottom: 20px;
+  
+  }
+}
