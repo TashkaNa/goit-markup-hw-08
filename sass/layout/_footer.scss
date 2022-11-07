@@ -1,17 +1,33 @@
 .footer{
   background: $color-darkgrey-bg;
   padding: 60px 0;
-
+  & .logo {
+  margin-bottom: 20px;
+  }
   &__container{
     display: flex;
     align-items: baseline;
+
   }
-  &__address{
+  .address__container {
     flex-grow: 1;
     margin-right: 70px;
   }
-  & .logo{
-    margin-bottom: 20px;
-  
+  .socials__container {
+    margin-right: 93px;
+    }
+  .social__icon {
+    fill: $color-primary-white;
   }
-}
+  }
+
+.subtitle{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-primary-white;
+  margin-bottom: 20px;
+  }
+ 

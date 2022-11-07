@@ -538,7 +538,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__address">
+        <div class="address__container">
           <a class="logo link" href="./index.html" lang="en"
             >Web<span class="logo--light">Studio</span></a
           >
@@ -556,13 +556,13 @@
               </li>
               <li class="address__item">
                 <a
-                  class="address__link link"
+                  class="address__link-contact link"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="address__item">
-                <a class="address__link link" href="tel:+380961111111"
+                <a class="address__link-contact link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -570,7 +570,7 @@
           </address>
         </div>
         <div class="socials__container">
-          <p class="socials__title">приєднуйтесь</p>
+          <p class="subtitle">приєднуйтесь</p>
           <ul class="social__list list">
             <li class="social__item">
               <a
@@ -623,14 +623,13 @@
           </ul>
         </div>
         <div class="subscribe__container">
-          <div class="subscribe__input-wrap">
-          <p class="subscribe__title">підпишиться на розсилку</p>
+          <p class="subtitle">підпишиться на розсилку</p>
           <form class="subscribe__form" action="#">
             <label class="subscribe__email-label">
               <input class="subscribe__input" type="email" name="subscribe-input" placeholder="E-mail"/>
             </label>
-            <button class="subscribe__btn" type="submit">Підписатися
-              <svg class="subscribe__btn-icon" width="24" height="24">
+            <button class="subscribe__btn btn" type="submit">Підписатися
+              <svg width="24" height="24">
                 <use href="./images/icons-sprite.svg#icon-send"></use>
               </svg>
             </button>
