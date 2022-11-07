@@ -817,10 +817,10 @@ textarea:focus {
   color: inherit;
   border-radius: 4px;
   padding: 6px 25px;
-  -webkit-transition: background-color .filter__button transition, color .filter__button transition, -webkit-box-shadow .filter__button transition;
-  transition: background-color .filter__button transition, color .filter__button transition, -webkit-box-shadow .filter__button transition;
-  transition: background-color .filter__button transition, color .filter__button transition, box-shadow .filter__button transition;
-  transition: background-color .filter__button transition, color .filter__button transition, box-shadow .filter__button transition, -webkit-box-shadow .filter__button transition;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter__button--current {
   color: #ffffff;
