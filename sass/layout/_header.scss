@@ -5,6 +5,10 @@
       margin-right: 93px;
       }
   }
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
   .header__nav {
     display: flex;
     align-items: center;
@@ -12,9 +16,6 @@
   .header__contacts{
     margin-left: auto;
   }
-  .header __container{
-    display: flex;
-    align-items: center;
-    }
+ 
    
   
