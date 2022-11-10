@@ -1,13 +1,8 @@
-.team{
-  background-color: $color-team-bg;
-  &__title {
-    @extend %title;
-  }
-  &__list{
+  .team{
     display: inline-flex;
     gap: 30px;
   }
-  &__item {
+  .team__item {
     flex-basis: 270px;
     min-width: 270px;
     background: $color-primary-white;
@@ -15,22 +10,21 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  &__card{
+ .team__card{
     padding: 30px 0;
     text-align: center;
   }
-  &__card-title {
+  .team__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
   }
-  &__card-text{
+  .team__text{
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: $color-primary-text;
     margin-bottom: 16px;
   }
-}

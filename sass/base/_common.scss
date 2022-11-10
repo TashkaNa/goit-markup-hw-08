@@ -10,13 +10,13 @@ body {
     background-color: $color-primary-white;
 }
 
-.link {
+a {
   text-decoration: none;
   color: inherit;
   transition: color $transition, box-shadow $transition;
 }
 
-.list {
+ul {
   list-style: none;
 }
 

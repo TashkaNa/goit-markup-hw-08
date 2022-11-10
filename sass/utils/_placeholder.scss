@@ -13,6 +13,10 @@
   transition: background-color $transition,
     color $transition,
     box-shadow $transition;
+      &:hover,
+      &:focus {
+        background-color: $color-hero-hover;
+      }
 }
 %title {
   color: $color-main;

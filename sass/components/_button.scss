@@ -1,10 +1,4 @@
 .hero__btn {
   @extend %btn;
   padding: 10px 32px;
-  
-  &:hover,
-  &:focus{
-  background-color: $color-hero-hover;
-  }
 }
-

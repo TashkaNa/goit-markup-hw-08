@@ -1,4 +1,15 @@
 .section{
     padding: 94px 0;
   }
+.section--no-padding-top {
+  padding-top: 0;
+  }
+
+.section--other-background {
+  background-color: $color-team-bg;
+}
+
+.section__title {
+@extend %title;
+}
   
