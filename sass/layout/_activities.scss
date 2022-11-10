@@ -1,20 +1,15 @@
-.activities {
-  padding-top: 0;
-  &__title{
-  @extend %title;
-  }
-  &__list{
-    display: inline-flex;
-    gap: 30px;
-  }
-  
+.activities{ 
+  display: inline-flex;
+  gap: 30px;
 }
-.thumb {
+
+.activities__thumb {
   position: relative;
   width: 370px;
   height: 294px;
 }
-.label {
+
+.activities__label {
   position: absolute;
   bottom: 0;
   left: 0;
