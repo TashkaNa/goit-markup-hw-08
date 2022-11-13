@@ -1,7 +1,7 @@
-# goit-markup-hw-07
+# goit-markup-hw-08
 
-Module 7. CSS методології. BEM мeтодологія. Препроцесор SASS.
+Module 8. Адаптивна верстка. Адаптивна графіка
 
-Посилання на сторінку: https://tashkana.github.io/goit-markup-hw-07/
+Посилання на сторінку: https://tashkana.github.io/goit-markup-hw-08/
 
 
