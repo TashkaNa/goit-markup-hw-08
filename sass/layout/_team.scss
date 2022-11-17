@@ -1,7 +1,18 @@
 .team {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    margin-bottom: 0px;
+  }
 }
 .team__item {
   width: 450px;
@@ -11,9 +22,7 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (min-width: 768px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+    width: 354px;
   }
 
   @media screen and (min-width: 1200px) {

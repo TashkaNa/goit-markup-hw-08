@@ -1,14 +1,27 @@
-.clients{
+.clients {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
   }
-.clients__item{
-  width: 170px;
+}
+.clients__item {
   height: 92px;
+  width: 210px;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
   }
-.clients__link{
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.clients__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -18,11 +31,10 @@
   border-radius: 4px;
   fill: $color-inactive-icon;
   transition: border-color $transition, fill $transition;
-    
+
   &:hover,
   &:focus {
     border-color: $color-accent;
     fill: $color-accent;
-    }
   }
-
+}
