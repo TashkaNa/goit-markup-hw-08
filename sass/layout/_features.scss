@@ -1,9 +1,10 @@
 .features {
   min-width: 320px;
+
   @media screen and (min-width: 480px) {
-    width: 480px;
+    min-width: 480px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
   }
@@ -11,6 +12,7 @@
 
 .features__item {
   min-width: 320px;
+
   @media screen and (min-width: 480px) {
     width: 100%;
   }
