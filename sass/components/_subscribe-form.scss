@@ -10,7 +10,9 @@
   }
 
   &__email-label {
-    margin-right: 12px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+    }
   }
   &__input {
     width: 358px;

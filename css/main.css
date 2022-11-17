@@ -1081,8 +1081,10 @@ h6 {
     margin-bottom: 0;
   }
 }
-.subscribe__email-label {
-  margin-right: 12px;
+@media screen and (min-width: 1200px) {
+  .subscribe__email-label {
+    margin-right: 12px;
+  }
 }
 .subscribe__input {
   width: 358px;
