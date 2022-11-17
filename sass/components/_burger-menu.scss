@@ -1,5 +1,4 @@
 .burger-menu {
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -27,14 +26,11 @@
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
-  width: 100%;
+  flex-basis: 480px;
+  max-width: 480px;
   height: 100%;
   padding: 48px 40px;
   background-color: $color-primary-white;
-
-  @include for-size(mobile-only) {
-    max-width: 480px;
-  }
 }
 
 .burger-menu__nav {

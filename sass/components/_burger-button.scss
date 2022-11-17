@@ -1,65 +1,68 @@
- .burger__button {
-  position: absolute;
-  right: 15px;
-  top:50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
-  cursor: pointer;
-  z-index: 3;
+.burger__button {
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 3;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
 
+  .burger__container {
+    width: 24px;
+    height: 16px;
+    position: relative;
+  }
+
+  .burger__line {
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: $color-black;
+    transition: opacity $transition750, background-color $transition750,
+      transform $transition750;
+  }
+
+  .burger__container:hover .burger__line {
+    background-color: $color-accent;
+  }
+
+  .burger__line--first {
+    top: 0;
+  }
+
+  .burger__line--second,
+  .burger__line--third {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .burger__line--fourth {
+    bottom: 0;
+  }
+
+  .burger_active .burger__line--first,
+  .burger_active .burger__line--fourth {
+    opacity: 0;
+  }
+
+  .burger_active .burger__line--second {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .burger_active .burger__line--third {
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }
-
-.burger__container {
-  width: 24px;
-  height: 16px;
-  position: relative;
-}
-
-.burger__line {
-  display: block;
-  position: absolute;
-  left: 0;
-  height: 3px;
-  border-radius: 4px;
-  width: 100%;
-  background-color: $color-black;
-  transition: opacity $transition750, background-color $transition750, transform $transition750;
-}
-
-.burger__container:hover .burger__line {
-  background-color: $color-accent;
-}
-
-.burger__line--first {
-  top: 0;
-}
-
-.burger__line--second,
-.burger__line--third {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.burger__line--fourth {
-  bottom: 0;
-}
-
-.burger_active .burger__line--first,
-.burger_active .burger__line--fourth {
-  opacity: 0;
-}
-
-.burger_active .burger__line--second {
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.burger_active .burger__line--third {
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-
