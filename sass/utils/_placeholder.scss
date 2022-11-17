@@ -10,14 +10,14 @@
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: background-color $transition,
-    color $transition,
+  transition: background-color $transition, color $transition,
     box-shadow $transition;
-      &:hover,
-      &:focus {
-        background-color: $color-hero-hover;
-      }
+  &:hover,
+  &:focus {
+    background-color: $color-hero-hover;
+  }
 }
+
 %title {
   color: $color-main;
   text-align: center;
@@ -26,7 +26,6 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-
 }
 
 %visually-hidden {

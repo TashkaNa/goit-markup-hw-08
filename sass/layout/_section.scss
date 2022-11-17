@@ -4,32 +4,44 @@
   @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }
-  .section--no-padding-top {
-    padding-top: 0;
+}
+.section--no-padding-top {
+  padding-top: 0;
+
+  @media screen and (min-width: 480px) {
+    display: none;
   }
 
-  .section__container {
-    margin: 0 auto;
-    padding: 0 15px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    width: 1200px;
+  }
+}
 
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
+.section__container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1600px;
 
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-    }
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-  .section__title {
-    @extend %title;
-    &--visually-hidden {
-      @extend %visually-hidden;
-    }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
-  .section--other-background {
-    background-color: $color-team-bg;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
+}
+
+.section__title {
+  @extend %title;
+  &--visually-hidden {
+    @extend %visually-hidden;
+  }
+}
+
+.section--other-background {
+  background-color: $color-team-bg;
 }
