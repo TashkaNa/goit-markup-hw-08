@@ -1,7 +1,10 @@
  .navigation {
-   display: flex;
-   align-items: center;
-   gap: 50px;
+  @include for-size(mobile-only) {
+   display: none;
+  }
+  display: flex;
+  align-items: center;
+  gap: 50px;
 
    &__link,
    &__link--current {
