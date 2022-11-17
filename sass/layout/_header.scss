@@ -6,18 +6,22 @@
 .header__container {
   margin: 0 auto;
   padding: 0 15px;
-  position: relative;
+  min-width: 320px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    display: flex;
-    align-items: center;
+    height: 80px;
+    position: static;
   }
+
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
@@ -25,14 +29,15 @@
 
 .header .logo {
   @media screen and (min-width: 480px) {
-    padding: 10px 0;
+    padding: 16px 0;
   }
+
   @media screen and (min-width: 768px) {
-    padding: 26px 0;
+    padding: 24px 0;
     margin-right: 87px;
   }
+
   @media screen and (min-width: 1200px) {
-    padding: 24px 0;
     margin-right: 93px;
   }
 }
@@ -41,12 +46,5 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-  }
-}
-
-.header__contacts {
-  margin-left: auto;
-  @include for-size(mobile-only) {
-    display: none;
   }
 }

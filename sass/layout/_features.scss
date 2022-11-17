@@ -1,13 +1,26 @@
-.features{  
-  display: flex;
-  gap: 30px;
+.features {
+  min-width: 320px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-  .features__item {
-  width: 270px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
   }
+}
+
+.features__item {
+  min-width: 320px;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 270px;
+  }
+}
 
 .features__container {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 270px;
