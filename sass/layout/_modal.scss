@@ -22,13 +22,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-
     background-color: $color-primary-white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: traslate $transition750;
-    width: 528px;
+    width: 450px;
+    height: 605px;
+
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+      height: 581px;
+    }
+
     .is-hidden & {
       animation-name: closing;
       animation-duration: 750ms;
@@ -44,12 +50,12 @@
   &__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: $color-main;
     margin-bottom: 12px;
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
   }
-}
-input[type='checkbox'] {
-  @extend %visually-hidden;
 }
