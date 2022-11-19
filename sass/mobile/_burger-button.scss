@@ -1,0 +1,20 @@
+.burger-button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+
+  &__line {
+    fill: $color-black;
+
+    .burger-button:hover &,
+    .burger-button:hover & {
+      fill: $color-accent;
+    }
+  }
+  & &__line {
+    transition: $transition750;
+    transform-origin: center;
+  }
+  &[aria-expanded='true'] {
+  }
+}

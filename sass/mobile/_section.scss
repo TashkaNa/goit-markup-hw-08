@@ -1,0 +1,12 @@
+.section {
+  padding: 60px 0;
+}
+
+.section--no-padding-top {
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+.section--other-background {
+  background-color: $color-team-bg;
+}
