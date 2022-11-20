@@ -11,3 +11,8 @@
 .section--other-background {
   background-color: $color-team-bg;
 }
+
+.section__title {
+  @extend %section__title;
+  margin-bottom: 30px;
+}
