@@ -1,0 +1,50 @@
+.checkbox {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: $color-primary-text;
+    gap: 7px;
+    margin-bottom: 30px;
+    @media (min-width: 320px) and (max-width: 479px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__terms {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: $color-accent;
+  }
+
+  &__icon {
+    fill: $color-primary-white;
+    background-color: $color-primary-white;
+    border: 2px solid $color-main;
+    border-radius: 2px;
+    transition: border $transition, background-color $transition,
+      outline $transition;
+    @media (min-width: 320px) and (max-width: 435px) {
+      order: 1;
+    }
+
+    .visually-hidden:checked ~ & {
+      background-color: $color-accent;
+      border: none;
+    }
+  }
+}
+
+.btn__submit {
+  @extend %btn;
+  margin-bottom: 0;
+  padding: 10px 50px;
+
+  &:focus,
+  &:hover {
+    background-color: $color-hero-hover;
+  }
+}

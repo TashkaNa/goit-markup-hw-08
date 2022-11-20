@@ -24,7 +24,7 @@
     transition: fill $transition;
   }
 }
-input {
+.form input {
   &[name='user-data'] {
     width: 100%;
     font-size: 12px;
