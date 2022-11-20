@@ -3,18 +3,37 @@
   background: transparent;
   border: none;
 
-  &__line {
-    fill: $color-black;
+  // &[aria-expanded='true'] {
+  // }
 
-    .burger-button:hover &,
-    .burger-button:hover & {
-      fill: $color-accent;
-    }
-  }
-  & &__line {
+  &:hover .line__top,
+  &:hover .line__bottom {
     transition: $transition750;
-    transform-origin: center;
+    y: 19;
   }
-  &[aria-expanded='true'] {
+
+  &:hover .line__top {
+    transform-origin: center;
+    rotate: 45deg;
+    width: 20px;
+    x: 10;
+  }
+  &:hover .line__middle {
+    opacity: 0;
+  }
+  &:hover .line__bottom {
+    transform-origin: center;
+    rotate: -45deg;
+    x: 10;
+    width: 20px;
+  }
+}
+
+.line {
+  fill: $color-black;
+
+  .burger-button:hover &,
+  .burger-button:focus & {
+    fill: $color-accent;
   }
 }

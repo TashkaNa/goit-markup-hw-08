@@ -11,7 +11,6 @@
   text-align: center;
 
   @media screen and (min-width: 480px) {
-    min-width: 480px;
     background-image: $hero-linear-gradient,
       url('../images/hero-bg-mobile@1x.jpg');
 
@@ -21,7 +20,6 @@
     }
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
     background-image: $hero-linear-gradient,
       url('../images/hero-bg-tablet@1x.jpg');
     @include for-size(retina) {
@@ -46,14 +44,16 @@
 
   .hero__title {
     margin: 0 auto 30px;
-    width: 360px;
+
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $color-primary-white;
-
+    @media (min-width: 480px) {
+      min-width: 360px;
+    }
     @media screen and (min-width: 1200px) {
       width: 696px;
       font-size: 44px;

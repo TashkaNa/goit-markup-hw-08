@@ -1,0 +1,21 @@
+.hero {
+  background-color: $color-hero-bg;
+  background-image: $hero-linear-gradient,
+    url('../images/hero-bg-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 118px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero__title {
+  margin: 0 auto 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-primary-white;
+}

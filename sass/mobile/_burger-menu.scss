@@ -4,7 +4,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-
   z-index: 2;
   background-color: $color-primary-white;
   transform: translateY(100%);
@@ -12,6 +11,7 @@
     visibility $transition750;
   opacity: 0;
 }
+
 .burger-menu__is-open {
   opacity: 1;
   visibility: visible;
@@ -26,22 +26,21 @@
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
-
   max-width: 480px;
   height: 100%;
   padding: 48px 40px;
   background-color: $color-primary-white;
 }
 
-.burger-menu__nav {
+.navigation {
   margin-bottom: auto;
 }
 
-.burger-nav__item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.burger-nav__link {
+.navigation__link {
   display: block;
   font-weight: 500;
   font-size: 40px;
@@ -59,13 +58,22 @@
   }
 }
 
+.burger-contacts {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+.contacts__icon {
+  display: none;
+}
+
 .burger-contacts__link-tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: $color-accent;
-  margin-bottom: 32px;
 }
 
 .burger-contacts__link-email {
