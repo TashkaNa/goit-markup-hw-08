@@ -710,10 +710,6 @@ input[type=checkbox], .section__title--visually-hidden {
   outline: none;
 }
 
-body {
-  overflow: hidden;
-}
-
 .form__input {
   display: block;
   position: relative;
