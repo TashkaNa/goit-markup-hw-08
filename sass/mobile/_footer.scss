@@ -1,0 +1,39 @@
+.footer {
+  background: $color-darkgrey-bg;
+  .logo {
+    margin-bottom: 20px;
+  }
+  .address__container {
+    margin-bottom: 60px;
+  }
+  .socials__container {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .social__icon {
+    fill: $color-primary-white;
+  }
+
+  .subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-primary-white;
+    margin-bottom: 20px;
+  }
+
+  .subscribe__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscribe__form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
