@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="section__container header__container">
+      <div class="header__container container">
         <nav class="header__nav">
           <a class="logo" href="./index.html" lang="en"
             >Web<span class="logo__dark">Studio</span></a
@@ -39,6 +39,18 @@
               <a class="navigation__link" href="#">Контакти</a>
             </li>
           </ul>
+          <button
+            class="burger"
+            aria-expanded="false"
+            aria-controls="burger-menu"
+          >
+            <div class="burger__container" type="button">
+              <span class="burger__line burger__line--first"></span>
+              <span class="burger__line burger__line--second"></span>
+              <span class="burger__line burger__line--third"></span>
+              <span class="burger__line burger__line--fourth"></span>
+            </div>
+          </button>
         </nav>
         <ul class="header__contacts contacts">
           <li class="contacts__item">
@@ -58,6 +70,95 @@
             >
           </li>
         </ul>
+        <div class="burger-menu" id="burger-menu">
+          <div class="burger-menu__container">
+            <nav class="burger-menu__nav">
+              <ul class="mobile-navigation">
+                <li class="mobile-navigation__item">
+                  <a class="mobile-navigation__link" href="./index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="mobile-navigation__item">
+                  <a
+                    class="mobile-navigation__link mobile-navigation__link--current"
+                    href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mobile-navigation__item">
+                  <a class="mobile-navigation__link" href="#">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="burger-contacts">
+              <li class="contacts__item burger-contacts__item">
+                <a
+                  class="contacts__link burger-contacts__link-email"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/icons-sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item burger-contacts__item">
+                <a
+                  class="contacts__link burger-contacts__link-tel"
+                  href="tel:+380961111111"
+                >
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use href="./images/icons-sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="burger-socials">
+              <li class="burger-socials__item">
+                <a
+                  class="burger-socials__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram</a
+                >
+              </li>
+              <li class="burger-socials__item">
+                <a
+                  class="burger-socials__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter</a
+                >
+              </li>
+              <li class="burger-socials__item">
+                <a
+                  class="burger-socials__link"
+                  href="https://facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook</a
+                >
+              </li>
+              <li class="burger-socials__item">
+                <a
+                  class="burger-socials__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -333,8 +434,8 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="section__container footer__container">
+    <footer class="section footer">
+      <div class="section__container container">
         <div class="address__container">
           <a class="logo" href="./index.html" lang="en"
             >Web<span class="logo__light">Studio</span></a
@@ -353,13 +454,13 @@
               </li>
               <li class="address__item">
                 <a
-                  class="address__link-contact"
+                  class="address__link contact_link"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="address__item">
-                <a class="address__link-contact link" href="tel:+380961111111"
+                <a class="address__link contact_link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -371,7 +472,7 @@
           <ul class="social">
             <li class="social__item">
               <a
-                class="social__link"
+                class="social__link link"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -440,5 +541,13 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="js/burger.js"></script>
   </body>
 </html>

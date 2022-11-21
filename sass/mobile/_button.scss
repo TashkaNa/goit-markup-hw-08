@@ -2,7 +2,7 @@
   @extend %btn;
   padding: 10px 24px;
 
-  @media screen and (min-width: 1200px) {
+  @include for-size(desktop) {
     padding: 10px 32px;
   }
 }

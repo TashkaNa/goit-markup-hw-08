@@ -1,8 +1,4 @@
 .burger {
-  // position: absolute;
-  // right: 0;
-  // top: 50%;
-  // transform: translateY(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +8,9 @@
   border: none;
   cursor: pointer;
   z-index: 3;
+  @include for-size(tablet) {
+    display: none;
+  }
 }
 
 .burger__container {
