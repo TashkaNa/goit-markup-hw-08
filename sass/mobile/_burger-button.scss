@@ -1,39 +1,63 @@
-.burger-button {
-  cursor: pointer;
+.burger {
+  // position: absolute;
+  // right: 0;
+  // top: 50%;
+  // transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   background: transparent;
   border: none;
+  cursor: pointer;
+  z-index: 3;
+}
 
-  // &[aria-expanded='true'] {
-  // }
+.burger__container {
+  width: 24px;
+  height: 16px;
+  position: relative;
+}
 
-  &:hover .line__top,
-  &:hover .line__bottom {
-    transition: $transition750;
-    y: 19;
-  }
-
-  &:hover .line__top {
-    transform-origin: center;
-    rotate: 45deg;
-    width: 20px;
-    x: 10;
-  }
-  &:hover .line__middle {
-    opacity: 0;
-  }
-  &:hover .line__bottom {
-    transform-origin: center;
-    rotate: -45deg;
-    x: 10;
-    width: 20px;
+.burger__line {
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  border-radius: 4px;
+  width: 100%;
+  background-color: $color-black;
+  transition: opacity $transition750, background-color $transition750,
+    transform $transition750;
+  .burger__container:hover & {
+    background-color: $color-accent;
   }
 }
 
-.line {
-  fill: $color-black;
+.burger__line--first {
+  top: 0;
+}
 
-  .burger-button:hover &,
-  .burger-button:focus & {
-    fill: $color-accent;
-  }
+.burger__line--second,
+.burger__line--third {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger__line--fourth {
+  bottom: 0;
+}
+
+.burger_active .burger__line--first,
+.burger_active .burger__line--fourth {
+  opacity: 0;
+}
+
+.burger_active .burger__line--second {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.burger_active .burger__line--third {
+  transform: translateY(-50%) rotate(-45deg);
 }

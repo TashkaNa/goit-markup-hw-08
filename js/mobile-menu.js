@@ -1,12 +1,12 @@
 (() => {
   const mobileMenu = document.querySelector('.burger-menu');
-  const openMenuBtn = document.querySelector('.burger__button');
+  const openMenuBtn = document.querySelector('.burger');
   const closeMenuBtn = document.querySelector('.burger_active');
 
   const toggleMenu = () => {
 
   const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('burger-menu__is-open');
 

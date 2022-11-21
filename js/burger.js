@@ -1,5 +1,5 @@
 (function () {
-  const burger = document.querySelector('.burger__button');
+  const burger = document.querySelector('.burger');
   burger.addEventListener('click', () => {
     burger.classList.toggle('burger_active');
   });
