@@ -1,7 +1,7 @@
 .section {
   padding: 60px 0;
 
-  @media screen and (min-width: 1200px) {
+  @include for-size(desktop) {
     padding: 94px 0;
   }
 }
@@ -10,11 +10,11 @@
   max-width: 1600px;
   padding-top: 0;
 
-  @media screen and (min-width: 480px) {
+  @include for-size(mobile) {
     display: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include for-size(desktop) {
     display: block;
     width: 1200px;
   }

@@ -1,3 +1,7 @@
+.projects--no-padding-top {
+  padding-top: 0;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -12,14 +16,12 @@
     max-width: 370px;
     height: 100%;
     background: $color-primary-white;
-    width: 100%;
-    max-width: 370px;
     @include for-size(tablet) {
-      flex-basis: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 2);
     }
-  }
-  .projects--no-padding-top {
-    padding-top: 0;
+    @include for-size(desktop) {
+      flex-basis: calc((100% - 30px) / 3);
+    }
   }
 
   &__link {

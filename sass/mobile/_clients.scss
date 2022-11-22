@@ -6,8 +6,15 @@
   gap: 30px;
 }
 .clients__item {
+  width: 100%;
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
-  width: calc((100% - 30px) / 2);
+  @include for-size(tablet) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  @include for-size(desktop) {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
