@@ -1,8 +1,16 @@
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
-}
 .section__container {
   text-align: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1600px;
+
+  @include for-size(mobile) {
+    max-width: 480px;
+  }
+  @include for-size(tablet) {
+    max-width: 768px;
+  }
+  @include for-size(desktop) {
+    max-width: 1200px;
+  }
 }

@@ -1,3 +1,10 @@
+.hero__container {
+  max-width: 360px;
+
+  @include for-size(desktop) {
+    max-width: 696px;
+  }
+}
 .hero {
   background-color: $color-hero-bg;
   background-image: $hero-linear-gradient,
@@ -9,8 +16,27 @@
   padding: 118px 0;
   margin: 0 auto;
   text-align: center;
+  @include for-size(retina) {
+    background-image: $hero-linear-gradient,
+      url('../images/hero-bg-mobile@2x.jpg');
+  }
+
+  @include for-size(tablet) {
+    background-image: $hero-linear-gradient,
+      url('../images/hero-bg-tablet@1x.jpg');
+    @include for-size(retina) {
+      background-image: $hero-linear-gradient,
+        url('../images/hero-bg-tablet@2x.jpg');
+    }
+  }
   @include for-size(desktop) {
     padding: 200px 0;
+    background-image: $hero-linear-gradient,
+      url('../images/hero-bg-desktop@1x.jpg');
+    @include for-size(retina) {
+      background-image: $hero-linear-gradient,
+        url('../images/hero-bg-desktop@2x.jpg');
+    }
   }
 }
 .hero__title {
@@ -21,4 +47,8 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $color-primary-white;
+  @include for-size(desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
