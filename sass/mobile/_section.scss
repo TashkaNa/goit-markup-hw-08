@@ -4,8 +4,9 @@
 
 .section--no-padding-top {
   display: none;
-  // margin: 0 auto;
-  // padding-top: 0;
+  @include for-size(desktop) {
+    padding-top: 0;
+  }
 }
 
 .section--other-background {
