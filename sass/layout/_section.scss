@@ -1,46 +1,26 @@
 .section {
   padding: 60px 0;
-
   @include for-size(desktop) {
     padding: 94px 0;
   }
 }
+
 .section--no-padding-top {
-  margin: 0 auto;
-  max-width: 1600px;
-  padding-top: 0;
-
-  @include for-size(mobile) {
-    display: none;
-  }
-
+  display: none;
   @include for-size(desktop) {
     display: block;
-    width: 1200px;
+    padding-top: 0;
   }
 }
 
-.section__container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1600px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+.section--other-background {
+  background-color: $color-team-bg;
 }
 
 .section__title {
-  @extend %title;
-
-  &--visually-hidden {
-    @extend %visually-hidden;
+  @extend %section__title;
+  margin-bottom: 30px;
+  @include for-size(desktop) {
+    margin-bottom: 50px;
   }
 }

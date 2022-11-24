@@ -1,14 +1,45 @@
 .footer {
   background: $color-darkgrey-bg;
-  .logo {
-    margin-bottom: 20px;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  .footer__container {
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+    @include for-size(desktop) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      text-align: left;
+      margin-bottom: 0;
+    }
   }
   .address__container {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 60px;
+
+    .logo {
+      margin-bottom: 20px;
+    }
+    @import './address';
+
+    @include for-size(desktop) {
+      flex-grow: 1;
+      text-align: flex-start;
+      margin-bottom: 0;
+    }
   }
   .socials__container {
     justify-content: center;
     margin-bottom: 60px;
+    @include for-size(desktop) {
+      margin-bottom: 0;
+      margin-right: 93px;
+    }
   }
 
   .social__icon {
@@ -26,14 +57,12 @@
   }
 
   .subscribe__container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .subscribe__form {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @import './subscribe-form';
   }
 }

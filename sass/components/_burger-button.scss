@@ -1,18 +1,14 @@
-.burger__button {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.burger {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
-  margin-left: auto;
+  background: transparent;
+  border: none;
   cursor: pointer;
   z-index: 3;
-
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     display: none;
   }
 }
@@ -33,10 +29,9 @@
   background-color: $color-black;
   transition: opacity $transition750, background-color $transition750,
     transform $transition750;
-}
-
-.burger__container:hover .burger__line {
-  background-color: $color-accent;
+  .burger__container:hover & {
+    background-color: $color-accent;
+  }
 }
 
 .burger__line--first {

@@ -1,6 +1,8 @@
 .activities {
-  display: inline-flex;
-  gap: 30px;
+  @include for-size(desktop) {
+    display: inline-flex;
+    gap: 30px;
+  }
 
   .activities__thumb {
     position: relative;

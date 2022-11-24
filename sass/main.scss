@@ -1,29 +1,21 @@
 @import './utils/variables';
 @import './base/common';
 @import './utils/mixin';
+@import './utils/placeholder';
 @import './mobile/main';
-
-// @import './layout/header
-// @import './components/burger-button
-// @import './components/burger-menu
-// @import './components/navigation
-// @import './components/contacts
-// @import './layout/hero
-// @import './utils/placeholder
-// @import './components/button
-// @import './layout/features
-// @import './layout/activities
-// @import './layout/team
-// @import './components/social-links
-// @import './layout/clients
-// @import './layout/footer
-// @import './components/address
-// @import './components/subscribe-form
-// @import './components/btn-close
-// @import './utils/closing-animation
-// @import './components/modal-form
-// @import './utils/modal-open
-// @import './layout/modal
-// @import './components/checkbox
-// @import './components/filters
-// @import './layout/projects';
+@import './layout/section';
+@import './layout/container';
+@import './layout/header';
+@import './components/logo';
+@import './components/burger-button';
+@import './components/burger-menu';
+@import './components/navigation';
+@import './components/modal-form';
+@import './components/modal';
+@import './components/btn-close';
+@import './utils/closing-animation';
+@import './components/checkbox-modal';
+@import './layout/hero';
+@import './components/button';
+@import './layout/features';
+@import './layout/activities';

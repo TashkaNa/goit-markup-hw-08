@@ -5,12 +5,12 @@
   max-width: 1600px;
 
   @include for-size(mobile) {
-    max-width: 480px;
+    width: 480px;
   }
   @include for-size(tablet) {
-    max-width: 768px;
+    width: 768px;
   }
   @include for-size(desktop) {
-    max-width: 1200px;
+    width: 1200px;
   }
 }

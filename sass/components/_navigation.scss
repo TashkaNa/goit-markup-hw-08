@@ -1,7 +1,7 @@
 .navigation {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     display: flex;
     align-items: center;
     gap: 50px;
