@@ -2,7 +2,6 @@
 @import './base/common';
 @import './utils/mixin';
 @import './utils/placeholder';
-@import './mobile/main';
 @import './layout/section';
 @import './layout/container';
 @import './layout/header';
@@ -19,3 +18,11 @@
 @import './components/button';
 @import './layout/features';
 @import './layout/activities';
+@import './layout/team';
+@import './components/social-links';
+@import './layout/clients';
+@import './components/filters';
+@import './layout/projects';
+@import './layout/footer';
+@import './components/address';
+@import './components/subscribe-form';
