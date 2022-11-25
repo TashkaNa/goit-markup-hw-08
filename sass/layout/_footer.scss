@@ -21,6 +21,9 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
+    @include for-size(tablet) {
+      margin-bottom: 0;
+    }
 
     .logo {
       margin-bottom: 20px;
@@ -28,13 +31,16 @@
 
     @include for-size(desktop) {
       flex-grow: 1;
-      text-align: flex-start;
+      margin-right: 70px;
       margin-bottom: 0;
     }
   }
   .socials__container {
     justify-content: center;
     margin-bottom: 60px;
+    @include for-size(tablet) {
+      margin-bottom: 0;
+    }
     @include for-size(desktop) {
       margin-bottom: 0;
       margin-right: 93px;
@@ -61,6 +67,10 @@
       flex-wrap: wrap;
       flex-direction: column;
       justify-content: center;
+      margin-top: 60px;
+      @include for-size(desktop) {
+        margin-top: 0;
+      }
     }
   }
 }

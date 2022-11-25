@@ -33,11 +33,11 @@
   height: 100%;
   padding: 48px 40px;
   background-color: $color-primary-white;
-  overflow-y: scroll;
-  @media (max-width: 410px) {
-    text-align: center;
-    padding: 48px 0;
-  }
+
+  // @media (max-width: 410px) {
+  //   text-align: center;
+  //   padding: 48px 0;
+  // }
 }
 .burger-menu__nav {
   margin-bottom: auto;

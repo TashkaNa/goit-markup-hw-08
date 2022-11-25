@@ -23,11 +23,10 @@
     & .logo {
       padding: 26px 0;
       margin-right: 87px;
+      @include for-size(desktop) {
+        margin-right: 92px;
+      }
     }
-  }
-
-  @include for-size(desktop) {
-    margin-right: 93px;
   }
 }
 .contacts {
